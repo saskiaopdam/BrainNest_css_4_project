@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- using BEM naming convention -->
+    <div class="page">
+
+      <header class="page__header">
+        <div class="content-wrapper">
+          <nav class="navbar">
+            <div class="navbar__logo">Header Logo</div>
+            <div class="navbar__menu">
+              <ul class="menu-bar">
+                <li class="menu-item">
+                  <a href="" class="menu-link">header link one</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">header link two</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="menu-link">header link three</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="hero">
+            <div class="hero__text-area">
+              <h1 class="hero-maintext">This website is awesome</h1>
+              <p class="hero-subtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+              <button class="button button_solid">Sign up</button>
+            </div>
+            <div class="hero__img-area">
+              <p>this is a placeholder for an image</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <section class="info-section">
+          <div class="content-wrapper">
+            <h2 class="info-section__heading">Some random information.</h2>
+            <div class="info-section__articles">
+              <figure class="article">
+                <div class="article__image"></div>
+                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              </figure>
+              <figure class="article">
+                <div class="article__image"></div>
+                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              </figure>
+              <figure class="article">
+                <div class="article__image"></div>
+                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              </figure>
+              <figure class="article">
+                <div class="article__image"></div>
+                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="quote-section">
+          <div class="content-wrapper">
+            <figure class="quote">
+              <blockquote class="quote__text">
+                This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
+              </blockquote>
+              <figcaption class="quote__source">-Thor</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="cta-section">
+          <div class="content-wrapper">
+            <div class="cta">
+              <div class="cta__text-area">
+                <p class="cta-maintext">Call to action! It's time!</p>
+                <p class="cta-subtext">Sign up for our product by clicking the button right over there!</p>
+              </div>
+              <div class="cta__button">
+                <button class="button button_ghost">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page__footer">
+        <div class="content-wrapper">
+          <p class="copyright">Copyright &copy;</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
