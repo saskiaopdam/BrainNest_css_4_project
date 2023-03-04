@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Coffee Lover" />
+    <meta name="description" content="The Coffee! site provides information about coffee drinks, coffee beans and coffee history. It contains a list of the 15 most popular coffee drinks." />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <link rel="icon" href="./favicon.ico"/>
+    <link rel="icon" href="./favicon.svg"/>
+    <title>Coffee!</title>
   </head>
   <body>
     <!-- using BEM naming convention -->
@@ -14,17 +18,20 @@
       <header class="page__header">
         <div class="content-wrapper">
           <nav class="navbar">
-            <div class="navbar__logo">Header Logo</div>
+            <div class="navbar__logo">
+              <img src="./images/coffee-bean-icon.svg" alt="coffee beans" class="logo-icon" />
+              <span class="logo-text">Coffee!</span>
+            </div>
             <div class="navbar__menu">
               <ul class="menu-bar">
                 <li class="menu-item">
-                  <a href="" class="menu-link">header link one</a>
+                  <a href="" class="menu-link">home</a>
                 </li>
                 <li class="menu-item">
-                  <a href="" class="menu-link">header link two</a>
+                  <a href="" class="menu-link">drinks</a>
                 </li>
                 <li class="menu-item">
-                  <a href="" class="menu-link">header link three</a>
+                  <a href="" class="menu-link">history</a>
                 </li>
               </ul>
             </div>
@@ -43,47 +50,51 @@
       </header>
 
       <main class="page__content">
-        <section class="info-section">
+        <section class="section">
           <div class="content-wrapper">
-            <h2 class="info-section__heading">Some random information.</h2>
-            <div class="info-section__articles">
-              <figure class="article">
-                <div class="article__image"></div>
-                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+            <h2 class="section-heading">Coffee Bean Types</h2>
+            <div class="gallery">
+              <figure class="card">
+                <img src="images/arabica.jpg" alt="arabica coffee beans" class="card__image">
+                <figcaption class="card__title">Arabica</figcaption>
+                <p class="card__text">Arabica: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque officiis laudantium eveniet libero, nostrum, debitis suscipit necessitatibus soluta adipisci magni itaque veniam impedit dolorem! Accusamus ratione necessitatibus ipsam itaque tenetur.</p>
               </figure>
-              <figure class="article">
-                <div class="article__image"></div>
-                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              <figure class="card">
+                <img src="images/robusta.jpg" alt="robusta coffee beans" class="card__image">
+                <figcaption class="card__title">Robusta</figcaption>
+                <p class="card__text">Robusta: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque officiis laudantium eveniet libero, nostrum, debitis suscipit necessitatibus soluta adipisci magni itaque veniam impedit dolorem! Accusamus ratione necessitatibus ipsam itaque tenetur.</p>
               </figure>
-              <figure class="article">
-                <div class="article__image"></div>
-                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              <figure class="card">
+                <img src="images/liberica.jpg" alt="liberica coffee beans" class="card__image">
+                <figcaption class="card__title">Liberica</figcaption>
+                <p class="card__text">Liberica: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque officiis laudantium eveniet libero, nostrum, debitis suscipit necessitatibus soluta adipisci magni itaque veniam impedit dolorem! Accusamus ratione necessitatibus ipsam itaque tenetur.</p>
               </figure>
-              <figure class="article">
-                <div class="article__image"></div>
-                <figcaption class="article__text">this is some subtext under an illustration or image</figcaption>
+              <figure class="card">
+                <img src="images/excelsa.jpg" alt="excelsa coffee beans" class="card__image">
+                <figcaption class="card__title">Excelsa</figcaption>
+                <p class="card__text">Excelsa: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque officiis laudantium eveniet libero, nostrum, debitis suscipit necessitatibus soluta adipisci magni itaque veniam impedit dolorem! Accusamus ratione necessitatibus ipsam itaque tenetur.</p>
               </figure>
             </div>
           </div>
         </section>
-        <section class="quote-section">
+        <section class="section section-highlighted">
           <div class="content-wrapper">
             <figure class="quote">
               <blockquote class="quote__text">
-                This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
+                Coffee is the common man's gold, and like gold, it brings to every person the feeling of luxury and nobility.
               </blockquote>
-              <figcaption class="quote__source">-Thor</figcaption>
+              <figcaption class="quote__source">Sheik Abd Al Kadir</figcaption>
             </figure>
           </div>
         </section>
-        <section class="cta-section">
+        <section class="section">
           <div class="content-wrapper">
-            <div class="cta">
-              <div class="cta__text-area">
-                <p class="cta-maintext">Call to action! It's time!</p>
-                <p class="cta-subtext">Sign up for our product by clicking the button right over there!</p>
+            <div class="call-to-action">
+              <div class="call-to-action__text">
+                <p class="cta-maintext">Curious?</p>
+                <p class="cta-subtext">Sign up for our monthly newsletter!</p>
               </div>
-              <div class="cta__button">
+              <div class="call-to-action__button">
                 <button class="button button_ghost">Sign up</button>
               </div>
             </div>
@@ -93,7 +104,7 @@
 
       <footer class="page__footer">
         <div class="content-wrapper">
-          <p class="copyright">Copyright &copy;</p>
+          <p class="copyright"> <small> &copy; Coffee Lover</small> </p>
         </div>
       </footer>
     </div>
